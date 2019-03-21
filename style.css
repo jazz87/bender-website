@@ -37,6 +37,7 @@ p {
     border-radius: 5px;
 }
 
+/* Header */
 #header {
     background-image: url(img/header.jpg);
     height: 100%;
@@ -51,7 +52,7 @@ p {
     margin: auto;
 }
 
-#header p {
+#header h1 {
     font-size: 50pt;
     color: #fff;
     padding-top: 5px;
