@@ -1,0 +1,303 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+h1 span {
+    border: 4px #20bcd5;
+    padding: 10px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    background-color: #fff;
+    padding: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#header {
+    background-image: url(img/header.jpg);
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header img {
+    display: block;
+    margin: auto;
+}
+
+#header p {
+    font-size: 50pt;
+    color: #fff;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navigation */
+.navitem {
+    list-style: none;
+    display:inline-block;
+}
+
+.navitem a {
+    font-size: 17pt;
+    color: #000;
+    text-decoration: none;
+    float:left;
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.navsection {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Change the color of links on hover */
+.navitem a:hover {
+    color: #20bcd5;
+}
+
+/* Add a color to the active/current link */
+.navitem a:active {
+    color: #20bcd5;
+}
+
+/* Column Cards */
+.column {
+  float: left;
+  width: 31%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 48px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Contact form */
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*
+
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    font-size: 11pt;
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.selected {
+    background-color: #f36f48;
+    font-weight: bold;
+    color: white;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
+
+*/
