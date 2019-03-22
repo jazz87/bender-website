@@ -259,3 +259,35 @@ input[type=submit]:hover {
   border: 1px solid black;
   margin: 5px;
 }
+
+/* CSS voor Mogelijkheden pagina*/
+/* column voor het naast elkaar vertonen van de afbeelding*/
+div.overons{Content: "";
+  display: table;
+  clear: both;
+  }
+div.overons2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;}
+.section2 {
+    background-color: #fff;
+    padding: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-image: url("img/download (1).jpg")
+}
+
+/* CSS voor Over ons pagina*/
+
+.sectionbron {
+ background-color: #fff;
+ padding: 50px 150px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+}
+#imagebox {
+ display: flex;
+ justify-content: space-around;
+}
