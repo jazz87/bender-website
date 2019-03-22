@@ -245,15 +245,15 @@ input[type=submit]:hover {
 
 /* Footer */
 
-footer { 
-  display: block;
-  background-color: #fff;
-  padding: 150px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
-/* Footer */
+/* Arrows Blog Page */
 #arrow_down, #arrow_up {
   font-size: x-large;
   width: 40px;
