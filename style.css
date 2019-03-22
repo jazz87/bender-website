@@ -197,3 +197,52 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+
+/* Quiz */
+
+.answer {
+  border-style: solid;
+  width: 30em;
+  height: 4em;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #D1D1D1;
+  margin: 0.2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.question {
+  border-style: solid;
+  display: flex;
+  width: 30em;
+  height: 4.5em;
+  text-align: center;
+  background-color: #D1D1D1;
+  margin-top: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.questiontable {
+  margin: 0 auto;
+}
+
+.article {
+    background-color: #fff;
+    padding: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  text-align: center;   
+}
+.titleOne {
+  color: #20bcd5; 
+  font-size: 1.5em; 
+}
+
+#container {
+  background-color: #fff;
+}

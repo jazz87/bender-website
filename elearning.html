@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Jobbenders - E-Learning</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-    <li class="navitem"><a href="overons.html">Over Ons</a></li>
-    <li class="navitem"><a href="blog.html">Blog</a></li>
-    <li class="navitem"><a href="index.html">Jobbenders</a></li>
-    <li class="navitem"><a href="mogelijkheden.html">Mogelijkheden</a></li>
-    <li id="huidig" class="navitem"><a href="elearning.html">E-learning</a></li>
-      </ul>
-    </nav>
-    <section>
-      <h2>Welkom in de sectie E-learning</h2>
+    <head>
+        <title>Jobbenders</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
+
+        <title>Jobbenders - Test je Kennis</title>
+        <script src="handlebars.js">
+        </script>
+    <script id="main" type="text/x-handlebars-template">
+       {{#each newArray}}
+       <table class='questiontable'>
+         <tr>
+           <th class='question'>{{this.questionOne}}</th>
+         </tr>
+         <tr>
+           <td class='answer' id='blok{{this.questionNumber}}answerone'>{{this.answerOne}}</td>
+         </tr>
+         <tr>
+           <td class='answer' id='blok{{this.questionNumber}}answertwo'>{{this.answerTwo}}</td>
+         </tr>
+         <tr>
+           <td class='answer' id='blok{{this.questionNumber}}answerthree'>{{this.answerThree}}</td>
+         </tr>
+         <tr>
+           <td class='answer' id='blok{{this.questionNumber}}answerfour'>{{this.answerFour}}</td>
+         </tr>
+       </table>
+       {{/each}}
+    </script>
+    </head>
+    
+    <body>
+        <!-- header start -->
+        <div id="header" class="section">
+            <p>JOB-BENDERS</p>
+        </div>
+        <!-- header end -->
+        
+        <!-- NAV start -->
+        <div class="navsection">
+            <nav>
+                <ul>
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li id="huidig" class="navitem"><a href="overons.html">Over Ons</a></li>
+                    <li class="navitem"><a href="mogelijkheden.html">Mogelijkheden</a></li>
+                    <li class="navitem"><a href="nieuws.html">Nieuws</a></li>
+                    <li class="navitem"><a href="elearning.html">E-learning</a></li>
+                    <li class="navitem"><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+        </div>
+        <!-- NAV end -->
+
+        <section class="article">
+      <h2 class="titleOne">Welkom op de pagina Test je Kennis</h2>
       <article>
         <p>
-          In dit stuk van de pagina kan een student een begin maken
-          aan zijn ontwikkeling tot junior software developer door middel van een quiz.
+          In dit stuk kan je je kennis testen over de aankomende vierde industriele revolutie.
+          Groen geeft het correcte antwoord weer. Rood geeft de foute antwoorden weer. 
+          Geen zorgen, er is geen puntentelling en foute antwoorden leren je ook wat!
         </p>
       </article>
     </section>
-  </body>
+    <div id="container">
+        <script src="jquery.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <!-- Over ons section end -->
+    </div>    
+    </body>
 </html>
