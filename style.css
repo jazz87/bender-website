@@ -244,12 +244,10 @@ input[type=submit]:hover {
 }
 
 /* Footer */
-
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #fff;
   margin-top: 20px;
 }
 
