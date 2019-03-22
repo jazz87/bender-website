@@ -20,10 +20,6 @@ h1 {
     margin: 0 0 10px 0;
 }
 
-h1 span {
-    border: 4px #20bcd5;
-    padding: 10px;
-}
 
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -236,7 +232,7 @@ input[type=submit]:hover {
     padding: 150px;
     margin-bottom: 10px;
     border-radius: 5px;
-  text-align: center;   
+    text-align: center;   
 }
 .titleOne {
   color: #20bcd5; 
@@ -245,4 +241,24 @@ input[type=submit]:hover {
 
 #container {
   background-color: #fff;
+}
+
+/* Footer */
+
+footer { 
+  display: block;
+  background-color: #fff;
+  padding: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+#arrow_down, #arrow_up {
+  font-size: x-large;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin: 5px;
 }

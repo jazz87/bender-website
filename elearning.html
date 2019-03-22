@@ -4,37 +4,38 @@
         <title>Jobbenders</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">        
 
         <title>Jobbenders - Test je Kennis</title>
         <script src="handlebars.js">
         </script>
-    <script id="main" type="text/x-handlebars-template">
-       {{#each newArray}}
-       <table class='questiontable'>
-         <tr>
-           <th class='question'>{{this.questionOne}}</th>
-         </tr>
-         <tr>
-           <td class='answer' id='blok{{this.questionNumber}}answerone'>{{this.answerOne}}</td>
-         </tr>
-         <tr>
-           <td class='answer' id='blok{{this.questionNumber}}answertwo'>{{this.answerTwo}}</td>
-         </tr>
-         <tr>
-           <td class='answer' id='blok{{this.questionNumber}}answerthree'>{{this.answerThree}}</td>
-         </tr>
-         <tr>
-           <td class='answer' id='blok{{this.questionNumber}}answerfour'>{{this.answerFour}}</td>
-         </tr>
-       </table>
-       {{/each}}
-    </script>
+        <script id="main" type="text/x-handlebars-template">
+           {{#each newArray}}
+           <table class='questiontable'>
+             <tr>
+               <th class='question'>{{this.questionOne}}</th>
+             </tr>
+             <tr>
+               <td class='answer' id='blok{{this.questionNumber}}answerone'>{{this.answerOne}}</td>
+             </tr>
+             <tr>
+               <td class='answer' id='blok{{this.questionNumber}}answertwo'>{{this.answerTwo}}</td>
+             </tr>
+             <tr>
+               <td class='answer' id='blok{{this.questionNumber}}answerthree'>{{this.answerThree}}</td>
+             </tr>
+             <tr>
+               <td class='answer' id='blok{{this.questionNumber}}answerfour'>{{this.answerFour}}</td>
+             </tr>
+           </table>
+           {{/each}}
+        </script>
     </head>
     
     <body>
         <!-- header start -->
         <div id="header" class="section">
-            <p>JOB-BENDERS</p>
+            <h1>JOB-BENDERS</h1>
         </div>
         <!-- header end -->
         
@@ -68,5 +69,10 @@
         <script type="text/javascript" src="script.js"></script>
         <!-- Over ons section end -->
     </div>    
+
+    <footer>
+        <p><strong>Deze website is gemaakt door:</strong> Mathijs Dun, Thomas van Hateren, Jeroen de Reus en Jasbee Singh</p>
+    </footer>
+
     </body>
 </html>
